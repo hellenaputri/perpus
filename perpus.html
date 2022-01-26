@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h3>Perpus</h3>
+        <p>Nama Siswa : <input type="text" name="" id="namasiswa" placeholder="Nama Lengkap"></p>
+        <p>
+            Judul Buku :
+            <select name="" id="nama">
+                <option value="">--Pilih--</option>
+                <option value="Matematika">Matematika</option>
+                <option value="IPA">IPA</option>
+                <option value="IPS">IPS</option>
+                <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                <option value="IPS">IPS</option>
+                <option value="Bahasa Inggris">Bahasa Inggris</option>
+            </select> 
+        </p>
+        <p>Jumlah : <input type="number" placeholder="Jumlah" id="alamat"></p>
+        <p><input type="submit" value="Save" onclick="submit()"></p>
+        <p id="title"></p>
+        <p id="namasiswa1"></p>
+        <p id="nama1"></p>
+        <p id="alamat1"></p>
+    
+    <script>
+        function submit(){
+            var nama = document.getElementById('nama').value;
+            var alamat = document.getElementById('alamat').value;
+            var namasiswa = document.getElementById('namasiswa').value;
+            
+
+            document.getElementById('title').innerHTML = `<h3>Daftar Buku yg dipinjam</h3>`;
+            document.getElementById('namasiswa1').innerHTML = `Nama : ${namasiswa}`;
+            document.getElementById('nama1').innerHTML = `Judul Buku : ${nama}`;
+            document.getElementById('alamat1').innerHTML = `Jumlah : ${alamat}`;
+        }
+    </script>
+</body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
